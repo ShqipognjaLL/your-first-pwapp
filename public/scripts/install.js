@@ -32,7 +32,8 @@ installButton.addEventListener('click', installPWA);
  */
 function saveBeforeInstallPromptEvent(evt) {
   // CODELAB: Add code to save event & show the install button.
-
+  deferredInstallPrompt = evt;
+  installButton.removeAttribute('hidden');
 }
 
 
